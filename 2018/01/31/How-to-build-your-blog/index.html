@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>How to build your blog | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="part one0x00最近在搭GitHub博客，也遇到了很多问题，总结一下。   所需工具（附下载链接）Git客户端   步骤（一）在GitHub官网上注册账户，邮箱很重要（二）创建博客之前，还需要创建仓库，有两种方法：   方法一在官网上找到如下按钮填好相应信息点击创建按钮仓库创建完毕，可以自己选择是否加readm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to build your blog">
+<meta property="og:url" content="http://yoursite.com/2018/01/31/How-to-build-your-blog/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="part one0x00最近在搭GitHub博客，也遇到了很多问题，总结一下。   所需工具（附下载链接）Git客户端   步骤（一）在GitHub官网上注册账户，邮箱很重要（二）创建博客之前，还需要创建仓库，有两种方法：   方法一在官网上找到如下按钮填好相应信息点击创建按钮仓库创建完毕，可以自己选择是否加readme，后期相加也可以随时加。   方法二（本地仓库）Windows下，打开 Git">
+<meta property="og:image" content="http://i4.bvimg.com/607149/e91c60c0a02baf23.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/13998486de47eec8.png">
+<meta property="og:image" content="http://i4.bvimg.com/607149/b703caa5513b16c3.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/55e6a5591a3d8569.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/3edfe4807866d55e.png">
+<meta property="og:image" content="http://i4.bvimg.com/607149/794c81b30be176f6.png">
+<meta property="og:image" content="http://i4.bvimg.com/607149/4d93dd4adf9f14ef.png">
+<meta property="og:image" content="http://i2.bvimg.com/607149/10a05392dbd027e5.png">
+<meta property="og:image" content="http://i4.bvimg.com/607149/4c935b63378f58e7.png">
+<meta property="og:image" content="http://i4.bvimg.com/607149/0e3bda743c746278.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/149b6611fc55bc1e.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/eafb70d8cface406.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/7f3a1bc3d3ebf562.png">
+<meta property="og:image" content="http://i2.bvimg.com/607149/297598e2487a4f4f.png">
+<meta property="og:image" content="http://i2.bvimg.com/607149/37c6d284b103a68e.png">
+<meta property="og:image" content="http://i2.bvimg.com/607149/a0b39534b9984252.png">
+<meta property="og:image" content="http://i2.bvimg.com/607149/abd702890e4da517.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/ca7da55d8198d138.png">
+<meta property="og:image" content="http://i2.bvimg.com/607149/c1625175780f7fbf.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/915ac1e4e07f512b.png">
+<meta property="og:image" content="http://i2.bvimg.com/607149/69b44e82156a09f7.png">
+<meta property="og:updated_time" content="2018-01-31T05:57:33.028Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to build your blog">
+<meta name="twitter:description" content="part one0x00最近在搭GitHub博客，也遇到了很多问题，总结一下。   所需工具（附下载链接）Git客户端   步骤（一）在GitHub官网上注册账户，邮箱很重要（二）创建博客之前，还需要创建仓库，有两种方法：   方法一在官网上找到如下按钮填好相应信息点击创建按钮仓库创建完毕，可以自己选择是否加readme，后期相加也可以随时加。   方法二（本地仓库）Windows下，打开 Git">
+<meta name="twitter:image" content="http://i4.bvimg.com/607149/e91c60c0a02baf23.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-How-to-build-your-blog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/31/How-to-build-your-blog/" class="article-date">
+  <time datetime="2018-01-31T05:53:37.000Z" itemprop="datePublished">2018-01-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      How to build your blog
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="part-one"><a href="#part-one" class="headerlink" title="part one"></a>part one</h1><h2 id="0x00"><a href="#0x00" class="headerlink" title="0x00"></a>0x00</h2><p>最近在搭GitHub博客，也遇到了很多问题，总结一下。  </p>
+<h3 id="所需工具（附下载链接）"><a href="#所需工具（附下载链接）" class="headerlink" title="所需工具（附下载链接）"></a>所需工具（附下载链接）</h3><p><a href="http://code.google.com/p/msysgit/downloads/list" target="_blank" rel="noopener">Git客户端</a>  </p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><p>（一）在GitHub官网上注册账户，邮箱很重要<br>（二）创建博客之前，还需要创建仓库，有两种方法：  </p>
+<h6 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h6><p>在官网上找到如下按钮<br><img src="http://i4.bvimg.com/607149/e91c60c0a02baf23.png" alt="image"><br>填好相应信息<br><img src="http://i1.bvimg.com/607149/13998486de47eec8.png" alt="image"><br>点击创建按钮<br>仓库创建完毕，可以自己选择是否加readme，后期相加也可以随时加。  </p>
+<h6 id="方法二（本地仓库）"><a href="#方法二（本地仓库）" class="headerlink" title="方法二（本地仓库）"></a>方法二（本地仓库）</h6><p>Windows下，打开 Git Bash<br><img src="http://i4.bvimg.com/607149/b703caa5513b16c3.png" alt="image"><br>首先检查电脑下现有的ssh key：<br><img src="http://i1.bvimg.com/607149/55e6a5591a3d8569.png" alt="image"><br>如果显示“No such file or directory”，则<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;邮件地址@youremail.com&quot;</span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):</span><br></pre></td></tr></table></figure></p>
+<p>然后输入pass phrase，一直回车即可<br>最后出现一个图案样式，就成功设置ssh key了<br>如果已经存在key文件，需要备份旧的数据并删除<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ ls </span><br><span class="line"> config id_rsa id_rsa.pub known_hosts</span><br><span class="line"> $ mkdir key_backup</span><br><span class="line"> $ cp id_rsa* key_backup</span><br><span class="line"> $ rm id_rsa*</span><br></pre></td></tr></table></figure></p>
+<p>在本机设置SSH Key后，需要添加到GitHub上<br><img src="http://i1.bvimg.com/607149/3edfe4807866d55e.png" alt="image"><br>在本地找到id_rsa.pub这个文件（一般是隐藏文件），准确复制里面的内容并贴到GitHub上，最后出现如下效果<br><img src="http://i4.bvimg.com/607149/794c81b30be176f6.png" alt="image"><br>在Git Bash上测试连接结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
+<p>如果提示：Hi 用户名， You’ve successfully authenticated, but GitHub does not provide shell access. 说明你连接成功了<br><img src="http://i4.bvimg.com/607149/4d93dd4adf9f14ef.png" alt="image"><br>接着设置你的用户名和邮箱<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;你的名字&quot;</span><br><span class="line">$ git config --global user.email &quot;your_email@youremail.com&quot;</span><br></pre></td></tr></table></figure></p>
+<p>成功连接GitHub<br>在Git Bash上输入如下命令<br><img src="http://i2.bvimg.com/607149/10a05392dbd027e5.png" alt="image"><br>$git init 是在该目录下初始化一个本地的仓库，会在新目录下新建一个.git的隐藏文件夹。<br>第二条命令是创建一个没有父节点的分支gh-pages，并自动切到该分支<br>在Git中，分支(branch)的概念非常重要，Git之所以强大，很大程度上就是因为它强大的分支体系。这里的分支名字必须是gh-pages，因为github规定，在项目类型的仓库中，只有该分支中的页面，才会生成网页文件。<br>在.git文件夹下创建如下几个文件和文件夹<br><img src="http://i4.bvimg.com/607149/4c935b63378f58e7.png" alt="image"><br><img src="http://i4.bvimg.com/607149/0e3bda743c746278.png" alt="image"><br>_includes：默认的在模板中可以引用的文件的位置<br>_layouts：默认的公共页面的位置<br>_posts：博客文章默认的存放位置<br>.gitignore：git将忽略这个文件中列出的匹配的文件或文件夹，不将这些纳入源码管理<br>_config.yml：关于jekyll模板引擎的配置文件<br>index.html：默认的主页  </p>
+<p>在_layouts目录下创建一个default.html，在其中输入如下内容，特别注意：文件本身要以UTF-8 无BOM头的格式保存，以防止各种编码问题<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">	&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">	　&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;</span><br><span class="line">	　&lt;title&gt;xxx&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">	　&#123;&#123;content &#125;&#125;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">	&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p>编辑index.html<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: default</span><br><span class="line">title: test title</span><br><span class="line">---</span><br><span class="line">&lt;p&gt;Hello world!&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<p>编辑_config.yml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">encoding: utf-8</span><br></pre></td></tr></table></figure></p>
+<p>在Git Bash中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 将当前的改动暂存在本地仓库</span><br><span class="line">$ git add .</span><br><span class="line"># 将暂存的改动提交到本地仓库，并写入本次提交的注释是”first post“</span><br><span class="line">$ git commit -m &quot;first post&quot;</span><br><span class="line"># 将远程仓库在本地添加一个引用：origin</span><br><span class="line">$ git remote add origin https://github.com/username/projectName.git</span><br><span class="line"># 向origin推送gh-pages分支，该命令将会将本地分支gh-pages推送到github的远程仓库，并在远程仓库创建一个同名的分支。该命令后会提示输入用户名和密码。</span><br><span class="line">$ git push origin gh-pages</span><br></pre></td></tr></table></figure></p>
+<h4 id="遇到过的问题"><a href="#遇到过的问题" class="headerlink" title="遇到过的问题"></a>遇到过的问题</h4><p>如果输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ Git remote add origin https://github.com/username/projectName.git</span><br></pre></td></tr></table></figure></p>
+<p>提示出错信息：fatal: remote origin already exists.  </p>
+<p>解决办法如下：  </p>
+<pre><code>1、先输入$ git remote rm origin
+
+2、再输入$ git remote add origin git@github.com:djqiang/gitdemo.git （我的到这儿就解决了）
+
+3、如果输入$ git remote rm origin 还是报错的话，error: Could not remove config section &apos;remote.origin&apos;. 我们需要修改gitconfig文件的内容
+
+4、找到你的github的安装路径
+
+5、找到一个名为gitconfig的文件，打开它把里面的[remote &quot;origin&quot;]那一行删掉
+</code></pre><h1 id="part-two"><a href="#part-two" class="headerlink" title="part two"></a>part two</h1><h2 id="0x00-1"><a href="#0x00-1" class="headerlink" title="0x00"></a>0x00</h2><p>现在已经安装完了Git  </p>
+<h2 id="0x01"><a href="#0x01" class="headerlink" title="0x01"></a>0x01</h2><p>安装<a href="http://nodejs.org/download/" target="_blank" rel="noopener">node.js</a><br>安装时注意<br><img src="http://i1.bvimg.com/607149/149b6611fc55bc1e.png" alt="image"><br>其他路径都保持默认即可<br>检查PATH环境变量是否配置了node.js<br><img src="http://i1.bvimg.com/607149/eafb70d8cface406.png" alt="image">  </p>
+<h2 id="0x02"><a href="#0x02" class="headerlink" title="0x02"></a>0x02</h2><p>安装hexo<br>打开git bash<br><img src="http://i1.bvimg.com/607149/7f3a1bc3d3ebf562.png" alt="image"><br><img src="http://i2.bvimg.com/607149/297598e2487a4f4f.png" alt="image">  </p>
+<h3 id="setup"><a href="#setup" class="headerlink" title="setup"></a>setup</h3><p>建立一个Hexo文件夹<br>在文件夹内右键打开Git Bash，执行如下命令：<br><img src="http://i2.bvimg.com/607149/37c6d284b103a68e.png" alt="image"><br><img src="http://i2.bvimg.com/607149/a0b39534b9984252.png" alt="image"><br><img src="http://i2.bvimg.com/607149/abd702890e4da517.png" alt="image"><br>这时候已经生成了一篇默认的博客  </p>
+<h3 id="create-a-now-post"><a href="#create-a-now-post" class="headerlink" title="create a now post"></a>create a now post</h3><p>在hexo文件夹目录下，打开Git Bash，执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;My New Post&quot;</span><br></pre></td></tr></table></figure></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><p><img src="http://i1.bvimg.com/607149/ca7da55d8198d138.png" alt="image"><br>以上可将markdown文件生成静态网页，会在public中个生成html和css等文件<br>刷新<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br>可以发现已经生产了一篇新文章”My New Post”  ctrl+c 停止  </p>
+<h3 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h3><p>在Hexo里面找到_config.yml文件，将里面的内容由<br><img src="http://i2.bvimg.com/607149/c1625175780f7fbf.png" alt="image">改成<br><img src="http://i1.bvimg.com/607149/915ac1e4e07f512b.png" alt="image"><br>部署完成后，在浏览器中打开<a href="https://github.com/crushcc/cc.git，网页显示正常，说明部署成功。" target="_blank" rel="noopener">https://github.com/crushcc/cc.git，网页显示正常，说明部署成功。</a>  </p>
+<h2 id="0x03"><a href="#0x03" class="headerlink" title="0x03"></a>0x03</h2><p>部署步骤<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
+<h2 id="0x04"><a href="#0x04" class="headerlink" title="0x04"></a>0x04</h2><p>本地调试<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g #生成</span><br><span class="line">$ hexo s #启动本地服务，进行文章预览调试</span><br></pre></td></tr></table></figure></p>
+<p>可以用一条命令替代<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s -g</span><br></pre></td></tr></table></figure></p>
+<h2 id="0x05"><a href="#0x05" class="headerlink" title="0x05"></a>0x05</h2><p>遇见错误<br>搭建hexo，在执行hexo deploy后,出现 error deployer not found:github<br>主要原因是hexo在3.0版本以后type都要改成git(以前是github)<br>然后要执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>改了之后执行，然后再部署。<br><img src="http://i2.bvimg.com/607149/69b44e82156a09f7.png" alt="image"><br>一定要注意各项目一定要对应。  </p>
+<h2 id="0x06"><a href="#0x06" class="headerlink" title="0x06"></a>0x06</h2><h3 id="命令总结"><a href="#命令总结" class="headerlink" title="命令总结"></a>命令总结</h3><h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</span><br><span class="line">hexo deploy #将.deploy目录部署到GitHub</span><br><span class="line">hexo help  # 查看帮助</span><br><span class="line">hexo version  #查看Hexo的版本</span><br></pre></td></tr></table></figure>
+<h4 id="复合命令"><a href="#复合命令" class="headerlink" title="复合命令"></a>复合命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy -g  #生成加部署</span><br><span class="line">hexo server -g  #生成加预览</span><br></pre></td></tr></table></figure>
+<p>命令的简写<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure></p>
+<h2 id="0x07"><a href="#0x07" class="headerlink" title="0x07"></a>0x07</h2><p>summary<br>一个简单的博客就搭成了</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/31/How-to-build-your-blog/" data-id="cjd2qitpl0000qsgoqxev66ye" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/01/31/How-to-build-your-blog/">How to build your blog</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
