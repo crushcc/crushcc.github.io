@@ -1,131 +1,76 @@
-<!DOCTYPE html>
-<html lang="">
-  <head>
-    
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="google-site-verification" content="" />
+  
+  <title>How to build your blog</title>
+  <meta name="author" content="Seiyu">
+  <meta name="description" content="keep walking">
+  
+  
+  <meta property="og:title" content="How to build your blog"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:site_name" content="Hexo"/>
+  <link href="/apple-touch-icon-precomposed.png" sizes="180x180" rel="apple-touch-icon-precomposed">
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/m.min.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
 
+<body>
+  <a id="top"></a>
+  <div id="main">
+    <div class="behind">
+      <a href="/" class="back black-color">
+        <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+        </svg>
+      </a>
+      <div class="description">
+        &nbsp;
+      </div>
+    </div>
+    <div class="container">
+      
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-  <meta name="description" content="How to build your blog"/>
-
-
-
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="Hexo">
-
-
-
-
-
-
-<link rel="canonical" href="http://yoursite.com/2018/01/31/How-to-build-your-blog/"/>
-
-
-<meta name="description" content="part one0x00最近在搭GitHub博客，也遇到了很多问题，总结一下。   所需工具（附下载链接）Git客户端   步骤（一）在GitHub官网上注册账户，邮箱很重要（二）创建博客之前，还需要创建仓库，有两种方法：   方法一在官网上找到如下按钮填好相应信息点击创建按钮仓库创建完毕，可以自己选择是否加readm">
-<meta property="og:type" content="article">
-<meta property="og:title" content="How to build your blog">
-<meta property="og:url" content="http://yoursite.com/2018/01/31/How-to-build-your-blog/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="part one0x00最近在搭GitHub博客，也遇到了很多问题，总结一下。   所需工具（附下载链接）Git客户端   步骤（一）在GitHub官网上注册账户，邮箱很重要（二）创建博客之前，还需要创建仓库，有两种方法：   方法一在官网上找到如下按钮填好相应信息点击创建按钮仓库创建完毕，可以自己选择是否加readme，后期相加也可以随时加。   方法二（本地仓库）Windows下，打开 Git">
-<meta property="og:image" content="http://i4.bvimg.com/607149/e91c60c0a02baf23.png">
-<meta property="og:image" content="http://i1.bvimg.com/607149/13998486de47eec8.png">
-<meta property="og:image" content="http://i4.bvimg.com/607149/b703caa5513b16c3.png">
-<meta property="og:image" content="http://i1.bvimg.com/607149/55e6a5591a3d8569.png">
-<meta property="og:image" content="http://i1.bvimg.com/607149/3edfe4807866d55e.png">
-<meta property="og:image" content="http://i4.bvimg.com/607149/794c81b30be176f6.png">
-<meta property="og:image" content="http://i4.bvimg.com/607149/4d93dd4adf9f14ef.png">
-<meta property="og:image" content="http://i2.bvimg.com/607149/10a05392dbd027e5.png">
-<meta property="og:image" content="http://i4.bvimg.com/607149/4c935b63378f58e7.png">
-<meta property="og:image" content="http://i4.bvimg.com/607149/0e3bda743c746278.png">
-<meta property="og:image" content="http://i1.bvimg.com/607149/149b6611fc55bc1e.png">
-<meta property="og:image" content="http://i1.bvimg.com/607149/eafb70d8cface406.png">
-<meta property="og:image" content="http://i1.bvimg.com/607149/7f3a1bc3d3ebf562.png">
-<meta property="og:image" content="http://i2.bvimg.com/607149/297598e2487a4f4f.png">
-<meta property="og:image" content="http://i2.bvimg.com/607149/37c6d284b103a68e.png">
-<meta property="og:image" content="http://i2.bvimg.com/607149/a0b39534b9984252.png">
-<meta property="og:image" content="http://i2.bvimg.com/607149/abd702890e4da517.png">
-<meta property="og:image" content="http://i1.bvimg.com/607149/ca7da55d8198d138.png">
-<meta property="og:image" content="http://i2.bvimg.com/607149/c1625175780f7fbf.png">
-<meta property="og:image" content="http://i1.bvimg.com/607149/915ac1e4e07f512b.png">
-<meta property="og:image" content="http://i2.bvimg.com/607149/69b44e82156a09f7.png">
-<meta property="og:image" content="http://oymyxu3ku.bkt.clouddn.com/TIM%E6%88%AA%E5%9B%BE20180131153036.jpg">
-<meta property="og:updated_time" content="2018-01-31T07:43:23.307Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to build your blog">
-<meta name="twitter:description" content="part one0x00最近在搭GitHub博客，也遇到了很多问题，总结一下。   所需工具（附下载链接）Git客户端   步骤（一）在GitHub官网上注册账户，邮箱很重要（二）创建博客之前，还需要创建仓库，有两种方法：   方法一在官网上找到如下按钮填好相应信息点击创建按钮仓库创建完毕，可以自己选择是否加readme，后期相加也可以随时加。   方法二（本地仓库）Windows下，打开 Git">
-<meta name="twitter:image" content="http://i4.bvimg.com/607149/e91c60c0a02baf23.png">
-
-
-<link rel="stylesheet" type="text/css" href="/css/style.css?v=" />
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
-
-
-
-
-
-<script type="text/javascript">
-  var themeConfig = {
-    fancybox: {
-      enable: 
-    },
-  };
-</script>
-
-
-
-
+  <article class="standard post">
+    <div class="title">
+      
+  
+    <h1 class="page-title center">
+        How to build your blog
+    </h1>
   
 
 
-
-    <title> How to build your blog - Hexo </title>
-  </head>
-
-  <body>
-    <div id="page">
-      <header id="masthead"><div class="site-header-inner">
-    <h1 class="site-title">
-        <a href="/." class="logo">Hexo</a>
-    </h1>
-
-    <nav id="nav-top">
-        
-  </nav>
-</div>
-
-      </header>
-      <div id="content">
-        
-    <div id="primary">
-        
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          How to build your blog
-        
-      </h1>
-
-      <time class="post-time">
-          Jan 31 2018
-      </time>
-    </header>
+    </div>
+    <div class="meta center">
+      
+<time datetime="2018-01-31T05:53:37.000Z">
+<svg class="i-calendar" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 6 L2 30 30 30 30 6 Z M2 15 L30 15 M7 3 L7 9 M13 3 L13 9 M19 3 L19 9 M25 3 L25 9"></path>
+  </svg>
+  &nbsp;
+  2018-01-31
+</time>
 
 
 
-    
-            <div class="post-content">
-            <h1 id="part-one"><a href="#part-one" class="headerlink" title="part one"></a>part one</h1><h2 id="0x00"><a href="#0x00" class="headerlink" title="0x00"></a>0x00</h2><p>最近在搭GitHub博客，也遇到了很多问题，总结一下。  </p>
+
+
+
+
+    </div>
+    <hr>
+    <div class="picture-container">
+      
+    </div>
+    <h1 id="part-one"><a href="#part-one" class="headerlink" title="part one"></a>part one</h1><h2 id="0x00"><a href="#0x00" class="headerlink" title="0x00"></a>0x00</h2><p>最近在搭GitHub博客，也遇到了很多问题，总结一下。  </p>
 <h3 id="所需工具（附下载链接）"><a href="#所需工具（附下载链接）" class="headerlink" title="所需工具（附下载链接）"></a>所需工具（附下载链接）</h3><p><a href="http://code.google.com/p/msysgit/downloads/list" target="_blank" rel="noopener">Git客户端</a>  </p>
 <h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><p>（一）在GitHub官网上注册账户，邮箱很重要<br>（二）创建博客之前，还需要创建仓库，有两种方法：  </p>
 <h6 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h6><p>在官网上找到如下按钮<br><img src="http://i4.bvimg.com/607149/e91c60c0a02baf23.png" alt="image"><br>填好相应信息<br><img src="http://i1.bvimg.com/607149/13998486de47eec8.png" alt="image"><br>点击创建按钮<br>仓库创建完毕，可以自己选择是否加readme，后期相加也可以随时加。  </p>
@@ -180,67 +125,63 @@
 <p>命令的简写<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure></p>
 <h2 id="0x07"><a href="#0x07" class="headerlink" title="0x07"></a>0x07</h2><p>summary<br>一个简单的博客就搭成了</p>
 
-            </div>
-          
 
-    
-      <footer class="post-footer">
-		
-
-        
-        
-  <nav class="post-nav">
-    
-    
-  </nav>
-
-        
-  <div class="comments" id="comments">
-    
+  </article>
+  </script>
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+  <div class="busuanzi center">
+    页阅读量:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+    站访问量:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+    站访客数:&nbsp;<span id="busuanzi_value_site_uv"></span>
   </div>
 
 
-      </footer>
-    
-  </article>
+
 
     </div>
-
-      </div>
-
-      <footer id="colophon"><span class="copyright-year">
-    
-        &copy;
-    
-    2018
-    <span class="footer-author">Seiyu.</span>
-    <span class="power-by">
-        Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a>
-    </span>
-</span>
-
-      </footer>
-
-      <div class="back-to-top" id="back-to-top">
-        <i class="iconfont icon-up"></i>
-      </div>
+  </div>
+  <footer class="page-footer"><div class="clearfix">
+</div>
+<div class="right-foot container">
+    <div class="firstrow">
+        <a href="#top" target="_self">
+        <svg class="i-caret-right" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M10 30 L26 16 10 2 Z"></path>
+        </svg>
+        </a>
+        © XXX 2017-2018
     </div>
-    
+    <div class="secondrow">
+        <a href="https://github.com/gaoryrt/hexo-theme-pln">
+        Theme Pln
+        </a>
+    </div>
+</div>
+<div class="clearfix">
+</div>
+</footer>
+  <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="/js/search.min.js"></script>
+<script type="text/javascript">
+
+// disqus scripts
 
 
-    
+// dropdown scripts
+$(".dropdown").click(function(event) {
+  var current = $(this);
+  event.stopPropagation();
+  $(current).children(".dropdown-content")[($(current).children(".dropdown-content").hasClass("open"))?'removeClass':'addClass']("open")
+});
+$(document).click(function(){
+    $(".dropdown-content").removeClass("open");
+})
 
+var path = "/search.xml";
+searchFunc(path, 'local-search-input', 'local-search-result');
 
+</script>
 
-
-  
-    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
-  
-
-  
-
-    <script type="text/javascript" src="/js/src/theme.js?v="></script>
-<script type="text/javascript" src="/js/src/bootstrap.js?v="></script>
-
-  </body>
+</body>
 </html>
