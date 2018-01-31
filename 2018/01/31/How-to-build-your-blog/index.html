@@ -32,7 +32,8 @@
 <meta property="og:image" content="http://i2.bvimg.com/607149/c1625175780f7fbf.png">
 <meta property="og:image" content="http://i1.bvimg.com/607149/915ac1e4e07f512b.png">
 <meta property="og:image" content="http://i2.bvimg.com/607149/69b44e82156a09f7.png">
-<meta property="og:updated_time" content="2018-01-31T05:57:33.028Z">
+<meta property="og:image" content="http://oymyxu3ku.bkt.clouddn.com/TIM%E6%88%AA%E5%9B%BE20180131153036.jpg">
+<meta property="og:updated_time" content="2018-01-31T07:36:01.681Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to build your blog">
 <meta name="twitter:description" content="part one0x00最近在搭GitHub博客，也遇到了很多问题，总结一下。   所需工具（附下载链接）Git客户端   步骤（一）在GitHub官网上注册账户，邮箱很重要（二）创建博客之前，还需要创建仓库，有两种方法：   方法一在官网上找到如下按钮填好相应信息点击创建按钮仓库创建完毕，可以自己选择是否加readme，后期相加也可以随时加。   方法二（本地仓库）Windows下，打开 Git">
@@ -74,9 +75,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -142,8 +143,22 @@
 <h2 id="0x03"><a href="#0x03" class="headerlink" title="0x03"></a>0x03</h2><p>部署步骤<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
 <h2 id="0x04"><a href="#0x04" class="headerlink" title="0x04"></a>0x04</h2><p>本地调试<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g #生成</span><br><span class="line">$ hexo s #启动本地服务，进行文章预览调试</span><br></pre></td></tr></table></figure></p>
 <p>可以用一条命令替代<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s -g</span><br></pre></td></tr></table></figure></p>
-<h2 id="0x05"><a href="#0x05" class="headerlink" title="0x05"></a>0x05</h2><p>遇见错误<br>搭建hexo，在执行hexo deploy后,出现 error deployer not found:github<br>主要原因是hexo在3.0版本以后type都要改成git(以前是github)<br>然后要执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<h2 id="0x05"><a href="#0x05" class="headerlink" title="0x05"></a>0x05</h2><p>遇见错误  </p>
+<ol>
+<li>搭建hexo，在执行hexo deploy后,出现 error deployer not found:github<br>主要原因是hexo在3.0版本以后type都要改成git(以前是github)<br>然后要执行  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
 <p>改了之后执行，然后再部署。<br><img src="http://i2.bvimg.com/607149/69b44e82156a09f7.png" alt="image"><br>一定要注意各项目一定要对应。  </p>
+<ol>
+<li>在输入命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>之后报错，如图<br><img src="http://oymyxu3ku.bkt.clouddn.com/TIM%E6%88%AA%E5%9B%BE20180131153036.jpg" alt="image"><br>在搜索引擎上也没有找到对应的解决方法，就重装了Node.js，问题解决。</p>
+<ol>
+<li>在“hexo deploy”后，遇到如下问题  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">bash: /dev/tty: No such device or address</span><br><span class="line">error: failed to execute prompt script (exit code 1)</span><br><span class="line">fatal: could not read Username for &apos;https://github.com&apos;: No error</span><br><span class="line">FATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error: Logon failed, use ctrl+c to cancel basic credential prompt.</span><br><span class="line">bash: /dev/tty: No such device or address</span><br><span class="line">error: failed to execute prompt script (exit code 1)</span><br><span class="line">fatal: could not read Username for &apos;https://github.com&apos;: No error</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>原因是把密码输错了= =</p>
 <h2 id="0x06"><a href="#0x06" class="headerlink" title="0x06"></a>0x06</h2><h3 id="命令总结"><a href="#命令总结" class="headerlink" title="命令总结"></a>命令总结</h3><h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</span><br><span class="line">hexo deploy #将.deploy目录部署到GitHub</span><br><span class="line">hexo help  # 查看帮助</span><br><span class="line">hexo version  #查看Hexo的版本</span><br></pre></td></tr></table></figure>
 <h4 id="复合命令"><a href="#复合命令" class="headerlink" title="复合命令"></a>复合命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy -g  #生成加部署</span><br><span class="line">hexo server -g  #生成加预览</span><br></pre></td></tr></table></figure>
 <p>命令的简写<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure></p>
@@ -152,7 +167,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/31/How-to-build-your-blog/" data-id="cjd2re91e0000ckgo6mauc4z9" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2018/01/31/How-to-build-your-blog/" data-id="cjd2rgoy80000nogogzuaeo6q" class="article-share-link">Share</a>
       
       
     </footer>
@@ -186,7 +201,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -207,7 +222,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2018 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
