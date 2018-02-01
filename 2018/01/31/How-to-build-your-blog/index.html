@@ -1,76 +1,380 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="google-site-verification" content="" />
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  <title>How to build your blog</title>
-  <meta name="author" content="Seiyu">
-  <meta name="description" content="keep walking">
   
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="building," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="part one0x00最近在搭GitHub博客，也遇到了很多问题，总结一下。   所需工具（附下载链接）Git客户端   步骤（一）在GitHub官网上注册账户，邮箱很重要（二）创建博客之前，还需要创建仓库，有两种方法：   方法一在官网上找到如下按钮填好相应信息点击创建按钮仓库创建完毕，可以自己选择是否加readm">
+<meta name="keywords" content="building">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to build your blog">
+<meta property="og:url" content="http://yoursite.com/2018/01/31/How-to-build-your-blog/index.html">
+<meta property="og:site_name" content="Seiyu">
+<meta property="og:description" content="part one0x00最近在搭GitHub博客，也遇到了很多问题，总结一下。   所需工具（附下载链接）Git客户端   步骤（一）在GitHub官网上注册账户，邮箱很重要（二）创建博客之前，还需要创建仓库，有两种方法：   方法一在官网上找到如下按钮填好相应信息点击创建按钮仓库创建完毕，可以自己选择是否加readme，后期相加也可以随时加。   方法二（本地仓库）Windows下，打开 Git">
+<meta property="og:image" content="http://i4.bvimg.com/607149/e91c60c0a02baf23.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/13998486de47eec8.png">
+<meta property="og:image" content="http://i4.bvimg.com/607149/b703caa5513b16c3.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/55e6a5591a3d8569.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/3edfe4807866d55e.png">
+<meta property="og:image" content="http://i4.bvimg.com/607149/794c81b30be176f6.png">
+<meta property="og:image" content="http://i4.bvimg.com/607149/4d93dd4adf9f14ef.png">
+<meta property="og:image" content="http://i2.bvimg.com/607149/10a05392dbd027e5.png">
+<meta property="og:image" content="http://i4.bvimg.com/607149/4c935b63378f58e7.png">
+<meta property="og:image" content="http://i4.bvimg.com/607149/0e3bda743c746278.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/149b6611fc55bc1e.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/eafb70d8cface406.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/7f3a1bc3d3ebf562.png">
+<meta property="og:image" content="http://i2.bvimg.com/607149/297598e2487a4f4f.png">
+<meta property="og:image" content="http://i2.bvimg.com/607149/37c6d284b103a68e.png">
+<meta property="og:image" content="http://i2.bvimg.com/607149/a0b39534b9984252.png">
+<meta property="og:image" content="http://i2.bvimg.com/607149/abd702890e4da517.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/ca7da55d8198d138.png">
+<meta property="og:image" content="http://i2.bvimg.com/607149/c1625175780f7fbf.png">
+<meta property="og:image" content="http://i1.bvimg.com/607149/915ac1e4e07f512b.png">
+<meta property="og:image" content="http://i2.bvimg.com/607149/69b44e82156a09f7.png">
+<meta property="og:image" content="http://oymyxu3ku.bkt.clouddn.com/TIM%E6%88%AA%E5%9B%BE20180131153036.jpg">
+<meta property="og:updated_time" content="2018-02-01T10:05:26.003Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to build your blog">
+<meta name="twitter:description" content="part one0x00最近在搭GitHub博客，也遇到了很多问题，总结一下。   所需工具（附下载链接）Git客户端   步骤（一）在GitHub官网上注册账户，邮箱很重要（二）创建博客之前，还需要创建仓库，有两种方法：   方法一在官网上找到如下按钮填好相应信息点击创建按钮仓库创建完毕，可以自己选择是否加readme，后期相加也可以随时加。   方法二（本地仓库）Windows下，打开 Git">
+<meta name="twitter:image" content="http://i4.bvimg.com/607149/e91c60c0a02baf23.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/01/31/How-to-build-your-blog/"/>
+
+
+
+
+
+  <title>How to build your blog | Seiyu</title>
   
-  <meta property="og:title" content="How to build your blog"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:site_name" content="Hexo"/>
-  <link href="/apple-touch-icon-precomposed.png" sizes="180x180" rel="apple-touch-icon-precomposed">
-  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/m.min.css">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+
+
+
+
+
+
+
 </head>
 
-<body>
-  <a id="top"></a>
-  <div id="main">
-    <div class="behind">
-      <a href="/" class="back black-color">
-        <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-            <path d="M2 30 L30 2 M30 30 L2 2"></path>
-        </svg>
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Seiyu</span>
+        <span class="logo-line-after"><i></i></span>
       </a>
-      <div class="description">
-        &nbsp;
-      </div>
     </div>
-    <div class="container">
       
+        <p class="site-subtitle"></p>
+      
+  </div>
 
-  <article class="standard post">
-    <div class="title">
-      
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
   
-    <h1 class="page-title center">
-        How to build your blog
-    </h1>
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            Über
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Kategorien
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+
+      
+    </ul>
   
 
+  
+</nav>
 
-    </div>
-    <div class="meta center">
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/31/How-to-build-your-blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Seiyu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Seiyu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">How to build your blog</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-31T13:53:37+08:00">
+                2018-01-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/blog/" itemprop="url" rel="index">
+                    <span itemprop="name">blog</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-<time datetime="2018-01-31T05:53:37.000Z">
-<svg class="i-calendar" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M2 6 L2 30 30 30 30 6 Z M2 15 L30 15 M7 3 L7 9 M13 3 L13 9 M19 3 L19 9 M25 3 L25 9"></path>
-  </svg>
-  &nbsp;
-  2018-01-31
-</time>
-
-
-
-
-
-
-
-    </div>
-    <hr>
-    <div class="picture-container">
       
-    </div>
-    <h1 id="part-one"><a href="#part-one" class="headerlink" title="part one"></a>part one</h1><h2 id="0x00"><a href="#0x00" class="headerlink" title="0x00"></a>0x00</h2><p>最近在搭GitHub博客，也遇到了很多问题，总结一下。  </p>
+
+      
+        <h1 id="part-one"><a href="#part-one" class="headerlink" title="part one"></a>part one</h1><h2 id="0x00"><a href="#0x00" class="headerlink" title="0x00"></a>0x00</h2><p>最近在搭GitHub博客，也遇到了很多问题，总结一下。  </p>
 <h3 id="所需工具（附下载链接）"><a href="#所需工具（附下载链接）" class="headerlink" title="所需工具（附下载链接）"></a>所需工具（附下载链接）</h3><p><a href="http://code.google.com/p/msysgit/downloads/list" target="_blank" rel="noopener">Git客户端</a>  </p>
 <h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><p>（一）在GitHub官网上注册账户，邮箱很重要<br>（二）创建博客之前，还需要创建仓库，有两种方法：  </p>
 <h6 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h6><p>在官网上找到如下按钮<br><img src="http://i4.bvimg.com/607149/e91c60c0a02baf23.png" alt="image"><br>填好相应信息<br><img src="http://i1.bvimg.com/607149/13998486de47eec8.png" alt="image"><br>点击创建按钮<br>仓库创建完毕，可以自己选择是否加readme，后期相加也可以随时加。  </p>
@@ -125,63 +429,434 @@
 <p>命令的简写<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure></p>
 <h2 id="0x07"><a href="#0x07" class="headerlink" title="0x07"></a>0x07</h2><p>summary<br>一个简单的博客就搭成了</p>
 
+      
+    </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/building/" rel="tag"># building</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/01/Decorate-your-blog/" rel="prev" title="Decorate your blog">
+                Decorate your blog <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
   </article>
-  </script>
-    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-  </script>
-  <div class="busuanzi center">
-    页阅读量:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
-    站访问量:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
-    站访客数:&nbsp;<span id="busuanzi_value_site_uv"></span>
-  </div>
 
 
 
-
+    <div class="post-spread">
+      
     </div>
   </div>
-  <footer class="page-footer"><div class="clearfix">
-</div>
-<div class="right-foot container">
-    <div class="firstrow">
-        <a href="#top" target="_self">
-        <svg class="i-caret-right" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-            <path d="M10 30 L26 16 10 2 Z"></path>
-        </svg>
-        </a>
-        © XXX 2017-2018
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
-    <div class="secondrow">
-        <a href="https://github.com/gaoryrt/hexo-theme-pln">
-        Theme Pln
-        </a>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Seiyu</p>
+              <p class="site-description motion-element" itemprop="description">keep walking</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">Artikel</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">Kategorien</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">Tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/crushcc" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:seiyu524@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/seiyucc" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://wsimp1er.com/" title="Simp1er" target="_blank">Simp1er</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://magic1an.com/" title="Magician" target="_blank">Magician</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="www.patapwn.com" title="Nxe" target="_blank">Nxe</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="www.iwenhu.cn" title="MengChen" target="_blank">MengChen</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#part-one"><span class="nav-number">1.</span> <span class="nav-text">part one</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0x00"><span class="nav-number">1.1.</span> <span class="nav-text">0x00</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#所需工具（附下载链接）"><span class="nav-number">1.1.1.</span> <span class="nav-text">所需工具（附下载链接）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#步骤"><span class="nav-number">1.1.2.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#方法一"><span class="nav-number">1.1.2.0.0.1.</span> <span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#方法二（本地仓库）"><span class="nav-number">1.1.2.0.0.2.</span> <span class="nav-text">方法二（本地仓库）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遇到过的问题"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">遇到过的问题</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#part-two"><span class="nav-number">2.</span> <span class="nav-text">part two</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0x00-1"><span class="nav-number">2.1.</span> <span class="nav-text">0x00</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x01"><span class="nav-number">2.2.</span> <span class="nav-text">0x01</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x02"><span class="nav-number">2.3.</span> <span class="nav-text">0x02</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#setup"><span class="nav-number">2.3.1.</span> <span class="nav-text">setup</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#create-a-now-post"><span class="nav-number">2.3.2.</span> <span class="nav-text">create a now post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">2.3.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到GitHub"><span class="nav-number">2.3.4.</span> <span class="nav-text">部署到GitHub</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x03"><span class="nav-number">2.4.</span> <span class="nav-text">0x03</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x04"><span class="nav-number">2.5.</span> <span class="nav-text">0x04</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x05"><span class="nav-number">2.6.</span> <span class="nav-text">0x05</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x06"><span class="nav-number">2.7.</span> <span class="nav-text">0x06</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#命令总结"><span class="nav-number">2.7.1.</span> <span class="nav-text">命令总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用命令"><span class="nav-number">2.7.1.1.</span> <span class="nav-text">常用命令</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x07"><span class="nav-number">2.8.</span> <span class="nav-text">0x07</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
     </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Seiyu</span>
+
+  
 </div>
-<div class="clearfix">
-</div>
-</footer>
-  <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
-<script src="/js/search.min.js"></script>
+
+
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
 <script type="text/javascript">
-
-// disqus scripts
-
-
-// dropdown scripts
-$(".dropdown").click(function(event) {
-  var current = $(this);
-  event.stopPropagation();
-  $(current).children(".dropdown-content")[($(current).children(".dropdown-content").hasClass("open"))?'removeClass':'addClass']("open")
-});
-$(document).click(function(){
-    $(".dropdown-content").removeClass("open");
-})
-
-var path = "/search.xml";
-searchFunc(path, 'local-search-input', 'local-search-result');
-
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
 
 </body>
 </html>
